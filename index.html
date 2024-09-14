@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GnsB12takviyesi</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./toplu/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 
+    - #MAIN CONTAINER
+  -->
+
+  <div class="container">
+    <main class="main">
+
+      <article class="app-box">
+
+        <!-- 
+          - #HEADER
+        -->
+
+        <header class="header">
+
+          <div>
+            <h1 class="h1 header-title">Benim günüm</h1>
+
+            <p class="header-time" data-header-time>2024</p>
+          </div>
+
+          <div class="dropdown-wrapper">
+            <button class="menu-btn" aria-label="Toggle menu" data-menu-toggler>
+              <ion-icon name="ellipsis-horizontal" aria-hidde="true"></ion-icon>
+            </button>
+
+            <!-- 
+              - dropdown menu
+            -->
+            <div class="dropdown-container" data-menu>
+              <ul class="dropdown-list">
+
+                <li class="dropdown-item">
+                  <p class="item-title">Tema</p>
+
+                  <div class="theme-btn-group">
+
+                    <button class="theme-btn active" style="--hue: 227" data-theme-btn data-hue="227"></button>
+
+                    <button class="theme-btn" style="--hue: 298" data-theme-btn data-hue="298"></button>
+
+                    <button class="theme-btn" style="--hue: 344" data-theme-btn data-hue="344"></button>
+
+                    <button class="theme-btn" style="--hue: 2" data-theme-btn data-hue="2"></button>
+
+                    <button class="theme-btn" style="--hue: 153" data-theme-btn data-hue="153"></button>
+
+                    <button class="theme-btn" style="--hue: 177" data-theme-btn data-hue="177"></button>
+
+                    <button class="theme-btn" style="--hue: 206" data-theme-btn data-hue="206"></button>
+
+                  </div>
+                </li>
+
+                <li>
+                  <button class="dropdown-link" data-modal-toggler data-menu-toggler>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+
+                    <span class="span">Uygulama bilgisi </span>
+                  </button>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+        </header>
+
+
+
+
+
+        <!-- 
+          - #MAIN
+        -->
+
+        <div class="title-wrapper" data-welcome-note>
+          <img src="./toplu/resim/calender-image.svg" width="130" height="115" alt="calender image" class="img">
+
+          <h2 class="h2">
+            B12 eksikliğin için burdayım <br>
+            gönder yapcaklarını :) (daha neleri unutcan bakalım)
+          </h2>
+        </div>
+
+        <ul class="task-list" data-task-list></ul>
+
+        <div class="input-wrapper" title="'Gününe bir görev ekle'">
+
+          <input type="text" name="task" aria-label="Add task" maxlength="100"
+            placeholder="'mesela semoşcuma bugün ne kadar harika olduğunu'yazmayı deneyin :) " class="input-field" data-task-input>
+
+          <span class="input-text">Gönder gelsin</span>
+
+          <div class="input-icon">
+            <ion-icon name="add-outline" class="add-icon" aria-hidden="true"></ion-icon>
+
+            <ion-icon name="ellipse-outline" class="circle-icon" aria-hidden="true"></ion-icon>
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!-- 
+        - #APP INFO MODAL
+      -->
+
+      <div class="app-info" data-info-modal>
+        <div class="modal">
+
+          <h2 class="modal-title"Uygulama bilgisi </h2>
+
+          <ul class="modal-list">
+
+            <li class="modal-item">
+              <strong class="strong">Versiyon:</strong>
+
+              <span class="span">1.0.0</span>
+            </li>
+
+            <li class="modal-item">
+              <strong class="strong">yayınlanma</strong>
+
+              <span class="span">25.01.2024</span>
+            </li>
+
+            <li class="modal-item">
+              <strong class="strong">Son güncelleme:</strong>
+
+              <span class="span">24.01.2024</span>
+            </li>
+
+            <li class="modal-item">
+              <strong class="strong">Gns tarafından yapıldı :</strong>
+
+              <a href="https://twitter.com/semaozcl" target="_black" class="span">Gns</a>
+            </li>
+
+          </ul>
+
+          <button class="modal-btn" data-modal-toggler>Ok</button>
+
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./toplu/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
